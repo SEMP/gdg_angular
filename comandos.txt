@@ -1,0 +1,27 @@
+npm install bower --save
+
+//instalar bower y http-server (global)
+npm install -g bower
+npm install -g http-server
+npm install -g gulp
+
+//para agregar e instalar las librerias al proyecto
+bower install angular bootstrap --save
+npm install local-web-server -save-dev
+
+//iniciar servidor en el puerto 2000
+http-server -p 3000
+
+//repositorios git
+git clone https://github.com/leodufer/gdg-angular
+git clone https://github.com/SEMP/gdg_angular.git
+
+//Para instalar las librerias de los proyectos
+bower install
+npm install
+
+bower install angular-material --save
+gulp bower
+
+materializecss
+bower install materialize --save
