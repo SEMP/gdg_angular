@@ -1,6 +1,7 @@
+//este comando no agrega al binario en el path en windows
 npm install bower --save
 
-//instalar bower y http-server (global)
+//instalar bower y http-server (global, para que agregue en el path en windows)
 npm install -g bower
 npm install -g http-server
 npm install -g gulp
@@ -9,7 +10,7 @@ npm install -g gulp
 bower install angular bootstrap --save
 npm install local-web-server -save-dev
 
-//iniciar servidor en el puerto 2000
+//iniciar servidor con la carpeta actual en el puerto 3000 (puerto default 8080)
 http-server -p 3000
 
 //repositorios git
@@ -20,8 +21,11 @@ git clone https://github.com/SEMP/gdg_angular.git
 bower install
 npm install
 
+//para instalar material desing de angular
 bower install angular-material --save
-gulp bower
 
-materializecss
+// para instalar materializecss
 bower install materialize --save
+
+//para agregar al index los js y css de forma automatica (bower es un nombre asignado en el archivo de configuracion)
+gulp bower
